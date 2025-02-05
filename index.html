@@ -23,13 +23,16 @@
             background-repeat: no-repeat ;
             background-position: center ;
             font-family: 'Cairo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .flex{
           display: flex;
           
         }
-        .flex div{
-            width: 100%;
+        .width-full{
+          width: 100%;
         }
         @media(max-width:500px){
           .flex{
@@ -40,6 +43,29 @@
         .button{
           padding:10px;
           font-size:1.2rem
+        }
+        .gap-5{
+          gap:20px;
+        }
+        .social-button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding:0;
+          margin:0;
+          margin-bottom: 0!important;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        .social-button .icon{
+          right:initial;
+          bottom:initial;
+          vertical-align: auto;
+
+        }
+        .justify-content-center{
+          justify-content: center;
         }
         </style>
         
@@ -62,15 +88,17 @@
             
             <div class="fadein"><h2>تواصل معنا</h2></div>
             <div class="flex button-entrance" style="--delay: 1s">
-              <div><a class="button button-custom button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://maps.app.goo.gl/p9eLpdcEc8vy3ycU9" target="_blank"><i style="color: fa-solid fa-location-dot" class="icon fas fa-location-dot"></i>الموقع</a></div>
-              <div><a class="button button-default button button-hover icon-hover" rel="noopener noreferrer nofollow" href="tel:+966 54 774 2222"><i class="icon fa-solid fa-phone"></i>رقم التواصل</a></div>
+              <div class="width-full"><a class="button button-default button button-hover icon-hover" rel="noopener noreferrer nofollow" href="tel:+966 54 774 2222"><i class="icon fa-solid fa-phone"></i>رقم التوصيل</a></div>
+              <div class="width-full"><a class="button button-custom button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://maps.app.goo.gl/p9eLpdcEc8vy3ycU9" target="_blank"><i style="color: fa-solid fa-location-dot" class="icon fas fa-location-dot"></i> الموقع</a></div>
 
             </div>
-            <div style="--delay: 2s" class="button-entrance"><a class="button button-instagram button button-hover " rel="noopener noreferrer nofollow" href="https://www.instagram.com/shawaya.80/" target="_blank"><i class="icon fa-brands fa-instagram"></i>انستقرام</a></div>
-            <div style="--delay: 3s" class="button-entrance"><a class="button button-tiktok button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://www.tiktok.com/@shawaya80?lang=en" target="_blank"><i class="icon fa-brands fa-tiktok"></i>تيك توك</a></div>
-            <div style="--delay: 4s" class="button-entrance"><a class="button button-snapchat button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://www.snapchat.com/add/shawayaa80?share_id=XdZuOHgN0FA&amp;locale=en-US" target="_blank"><i class="icon fa-brands fa-snapchat"></i>سناب شات</a></div>
-            <div style="--delay: 5s" class="button-entrance"><a class="button button-facebook button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://www.facebook.com/people/Shawaya-80/100093532436539/" target="_blank"><i class="icon fa-brands fa-facebook-f"></i>فيس بوك</a></div>
-            <div style="--delay: 6s" class="button-entrance"><a class="button button-custom_website button button-hover icon-hover" rel="noopener noreferrer nofollow" href="http://shawaya80.com/" target="_blank"><img alt="custom_website" class="icon hvr-icon" src="https://linksta.cc/assets/favicon/icons/6152.png" onerror="this.onerror=null; this.src='https://linksta.cc/assets/linkstack/icons/website.svg';">ويب سايت</a></div>
+            <div class="flex gap-5 justify-content-center">
+              <div style="--delay: 2s" class="button-entrance"><a class="button button-instagram button social-button button-hover " rel="noopener noreferrer nofollow" href="https://www.instagram.com/shawaya.80/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a></div>
+              <div style="--delay: 3s" class="button-entrance"><a class="button button-tiktok button social-button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://www.tiktok.com/@shawaya80?lang=en" target="_blank"><i class="icon fa-brands fa-tiktok"></i></a></div>
+              <div style="--delay: 4s" class="button-entrance"><a class="button button-snapchat button social-button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://www.snapchat.com/add/shawayaa80?share_id=XdZuOHgN0FA&amp;locale=en-US" target="_blank"><i class="icon fa-brands fa-snapchat"></i></a></div>
+              <div style="--delay: 5s" class="button-entrance"><a class="button button-facebook button social-button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://www.facebook.com/people/Shawaya-80/100093532436539/" target="_blank"><i class="icon fa-brands fa-facebook-f"></i></a></div>
+              <div style="--delay: 6s" class="button-entrance"><a class="button button-custom_website button social-button button-hover icon-hover" rel="noopener noreferrer nofollow" href="http://shawaya80.com/" target="_blank"><img alt="custom_website" class="icon hvr-icon" src="https://linksta.cc/assets/favicon/icons/6152.png" onerror="this.onerror=null; this.src='https://linksta.cc/assets/linkstack/icons/website.svg';"></a></div>
+            </div>
             <!-- <div class="fadein"><h2>التوصيل</h2></div>
             <div style="--delay: 8s" class="button-entrance"><a class="button button-custom button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://jahez.link/CZBj6HpCQCb" target="_blank"><img src="images/1.png" class="icon">جاهز</a></div>
             <div style="--delay: 9s" class="button-entrance"><a class="button button-custom button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://thechefzco.app.link/NK8xoytCQCb" target="_blank"><img src="images/2.png" class="icon">ذا شيفز</a></div>
