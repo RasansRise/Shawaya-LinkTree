@@ -29,16 +29,18 @@
         }
         .flex{
           display: flex;
-          
+          justify-content: center;
+          flex-wrap: wrap;
         }
-        .width-full{
-          width: 100%;
+
+        .width-full
+        {
+          width:100%
         }
         @media(max-width:500px){
-          .flex{
+          .wrap{
             flex-direction: column;
-            
-          } 
+          }
         }
         .button{
           padding:10px;
@@ -87,9 +89,9 @@
             <!-- Buttons -->
             
             <div class="fadein"><h2>تواصل معنا</h2></div>
-            <div class="flex button-entrance" style="--delay: 1s">
-              <div class="width-full"><a class="button button-default button button-hover icon-hover" rel="noopener noreferrer nofollow" href="tel:+966 54 774 2222"><i class="icon fa-solid fa-phone"></i>رقم التوصيل</a></div>
-              <div class="width-full"><a class="button button-custom button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://maps.app.goo.gl/p9eLpdcEc8vy3ycU9" target="_blank"><i style="color: fa-solid fa-location-dot" class="icon fas fa-location-dot"></i> الموقع</a></div>
+            <div class="flex wrap button-entrance" style="--delay: 1s">
+              <div  class="width-full"><a class="button button-default button button-hover icon-hover" rel="noopener noreferrer nofollow" href="tel:+966 54 774 2222"><i class="icon fa-solid fa-phone"></i>رقم التوصيل</a></div>
+              <div  class="width-full"><a class="button button-custom button button-hover icon-hover" rel="noopener noreferrer nofollow" href="https://maps.app.goo.gl/p9eLpdcEc8vy3ycU9" target="_blank"><i style="color: fa-solid fa-location-dot" class="icon fas fa-location-dot"></i> الموقع</a></div>
 
             </div>
             <div class="flex gap-5 justify-content-center">
